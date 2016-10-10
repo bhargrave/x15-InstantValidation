@@ -1,7 +1,8 @@
 function validate(){
   //Grab the user's input and store in variables
   var userEntered = document.getElementById("user").value;
-  var passEntered = document.getElementById("pass").value;
+  var txt = userEntered.length;
+  if (txt < 6);
 
   //Show message that there is an error with the username...
   document.getElementById("usernameError").innerHTML="Bad username.";
@@ -9,8 +10,9 @@ function validate(){
   document.getElementById("usernameError").classList.add("shown-message");
   //Turn the username items red
   document.getElementById("usernameGroup").classList.add("has-error");
-
-  //Show message that there is an error with the password...
+}
+  function validate(){//Show message that there is an error with the password...
+  var passEntered = document.getElementById("pass").value;
   document.getElementById("passwordError").innerHTML="Bad password.";
   document.getElementById("passwordError").classList.remove("hidden-message");
   document.getElementById("passwordError").classList.add("shown-message");
