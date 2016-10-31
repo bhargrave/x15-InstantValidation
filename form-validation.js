@@ -1,5 +1,5 @@
 function validate(){
-  //Grab the user's input and store in variables
+  //Grab the user's input and store in variablesszc
   var userEntered = document.getElementById("user").value;
   var txt = userEntered.length;
   if (txt < 6);
